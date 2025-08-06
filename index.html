@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>NeuRock</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white min-h-screen flex items-center justify-center">
+  <div class="p-6 bg-gray-800 rounded-xl shadow-lg w-full max-w-md space-y-4">
+    <h1 class="text-3xl font-bold text-center">NeuRock</h1>
+    <p class="text-sm text-gray-400 text-center">Tune your mind, your way.</p>
+
+    <label for="brainType" class="block">Your Brain Type:</label>
+    <select id="brainType" class="w-full p-2 bg-gray-700 rounded">
+      <option value="adhd">ADHD</option>
+      <option value="ruminator">Ruminator</option>
+      <option value="anxious">Anxious</option>
+    </select>
+
+    <label for="stateGoal" class="block">Desired State:</label>
+    <select id="stateGoal" class="w-full p-2 bg-gray-700 rounded">
+      <option value="focus">Focus</option>
+      <option value="calm">Calm</option>
+      <option value="energy">Energy</option>
+    </select>
+
+    <button id="modulate" class="w-full bg-blue-600 hover:bg-blue-500 p-2 rounded font-semibold">Modulate Me</button>
+
+    <div id="result" class="text-center text-lg mt-4 font-medium"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
