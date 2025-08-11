@@ -1,8 +1,8 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import BrainStateSelection from "./pages/BrainStateSelection";
+import BrainStateSelection from "./components/BrainStateSelection";
 import Home from "./pages/Home";
 
-export default function App() {
+function AppWrap() {
   return (
     <Router>
       <Routes>
@@ -12,3 +12,5 @@ export default function App() {
     </Router>
   );
 }
+
+export default AppWrap;
